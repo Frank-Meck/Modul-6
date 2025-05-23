@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/img/logo_small.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/rezept.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/header.css">
+		
+		<script type="module" src="./js/calc_portions.js"></script>
+
+  		<script src="./js/header.js"></script>
+		<title>Gulaschsuppe</title>
+	</head>
+	<body>
+  <header class="sticky-header header-underline">
+    <div>
+      <nav class="header-start">
+        <div class="header-tablet header-handy">
+          <a href="index.html"><img class="header-bild" src="./assets/img/logo.png"></a>
+        </div>
+        <div class="header-nav">
+          <div class="nav-container nav-container-tablet nav-container-uebergang-handy ">
+            <a class="header-a-allgemein" href="index.html">Start</a>
+            <a class="header-a-allgemein" href="rezept-des-tages.html">Rezept des Tages</a> <!--/*order-btn*/-->
+            <a class="header-a-allgemein" href="kontakt.html">Kontakt</a>
+            <a class="header-a-allgemein" href="impressum.html">Impressum</a>
+            <a class="header-a-allgemein" href="datenschutz.html">Datenschutz</a>
+          </div>
+          <div id="Menu-aufklappbar">
+            <div class="hamburg hamburger-menu" onclick="openMenu()">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="menu-handy">
+        <div class="menu d-none" id="menu">
+          <a href="index.html" class="header-a-allgemein-hamburg links">Start</a>
+          <a href="rezept-des-tages.html" class="header-a-allgemein-hamburg  links">Rezept des Tages</a>
+          <a href="kontakt.html" class="header-a-allgemein-hamburg  links">Kontakt</a>
+          <a href="impressum.html" class="header-a-allgemein-hamburg  links">Impressum</a>
+          <a href="datenschutz.html" class="header-a-allgemein-hamburg  links">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </header>
+		<main>
+			<section class="overview">
+				<h3>Gulaschsuppe</h3>
+				<img src="./assets/img/Frank/ai-generated-8317379_1280.jpg" alt="Bild von einer Gulaschsuppe" />
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>30 Min.</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/brain-solid.svg" alt="Gehirn" /><span>normal</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/calendar-alt-regular.svg" alt="Kalendar" /><span
+							>28.09.2020</span
+						>
+					</div>
+				</div>
+			</section>
+			<section class="recipe">
+				<div class="divider"></div>
+				<div class="calculator">
+					<span class="ingredients-for-text">Zutaten für</span>
+					<input min="1" max="99" type="number" value="4" />
+					<button class="portions">Portionen</button>
+				</div>
+				<div class="ingredients">
+					<div class="ingredient">
+						<span class="amount"><span class="value">333</span>g</span
+						><span class="type">Schweinefleisch, (z. B. Schinkenbraten)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">333</span>g</span
+						><span class="type">Rindfleisch, (z. B. vom Jungbullen)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">2,67</span></span
+						><span class="type">Paprikaschote(n), bunt</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">2</span></span
+						><span class="type">Gemüsezwiebel(n)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">2</span>kl. Dosen</span
+						><span class="type">Tomate(n), stückige</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">1</span>Liter</span
+						><span class="type">Brühe</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">0,33</span>Tube(n)</span
+						><span class="type">Tomatenmark</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">0,67</span>TL</span
+						><span class="type">Zucker</span>
+					</div>
+					<div class="ingredient"><span class="type">Salz</span></div>
+				</div>
+			</section>
+			<section class="preparation">
+				<h4>Zubereitung</h4>
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>Arbeitszeit ca. 30 Minuten</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span
+							>Gesamtzeit ca. 30 Minuten</span
+						>
+					</div>
+				</div>
+				<p>
+					Das Fleisch in kleine Würfel schneiden und scharf anbraten. In der Zwischenzeit die Zwiebeln grob würfeln und
+        mit den in Streifen geschnittenen Paprikaschoten hinzufügen. Kurz mit anbraten, mit Salz und Paprikapulver
+        würzen und mit den Tomaten aus der Dose und anschließend mit der Brühe aufgießen. Bei geschlossenem Deckel 1 -
+        1,5 Stunden köcheln lassen, bis das Fleisch weich ist. Jetzt Tomatenmark dazu geben, bis die gewünschte
+        Sämigkeit erreicht ist. Mit Salz, Cayennepfeffer und Zucker abschmecken.
+				</p>
+			</section>
+			<section class="credits">
+				<h5>Rezept erstellt von</h5>
+				<div class="creator">
+					<img src="./assets/img/Frank/FM.jpg" alt="Bild von Frank" />
+					<span>Frank</span>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a class="big invert" href="/"
+				><img class="logo" src="./assets/img/logo.png" alt="Kochwelt Logo mit Text"
+			/></a>
+			<a class="small invert" href="/"
+				><img class="logo" src="./assets/img/logo_small.png" alt="Kochwelt Logo"
+			/></a>
+			<div class="footer-middle"><span>Rechtliches:</span>
+			<a class="external-link" href="https://pixabay.com/de/users/franz26-1553839/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8317379">
+				Bild der Gulaschsuppe von Pixabay (Franz Bachinger)</a>
+			</div>
+			<div class="socials">
+				<div class="social-links">
+					<a href="https://www.facebook.com/"><img src="./assets/img/calvin/facebook.png" alt="Facebook Logo" /></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/calvin/instagram.png" alt="Instagram Logo" /></a>
+					<a href="https://x.com/"><img src="./assets/img/calvin/twitter.png" alt="Twitter Logo" /></a>
+				</div>
+				<a class="external-link" href="https://de.freepik.com/">Logos von https://de.freepik.com/</a>
+			</div>
+		</footer>
+	</body>
+</html>

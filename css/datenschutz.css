@@ -1,0 +1,11 @@
+main {
+  word-break: break-all;
+}
+
+section {
+  padding-block: 5vh;
+}
+
+li {
+  margin-left: 24px;
+}

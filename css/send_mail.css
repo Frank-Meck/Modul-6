@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  background-color: var(--gray);
+  width: min(500px, 100%);
+  padding: 3vw 5vh;
+  border-radius: 10px;
+}
+
+span {
+  text-align: center;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 10px;
+}

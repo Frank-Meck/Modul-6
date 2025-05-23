@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/img/logo_small.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/rezept.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+	  <link rel="stylesheet" href="./css/header.css">
+		
+		<script type="module" src="./js/calc_portions.js"></script>
+
+  		<script src="./js/header.js"></script>
+
+		<title>Spicy Thai Noodles</title>
+	</head>
+	<body>
+		    <header class="sticky-header header-underline">
+    <div>
+      <nav class="header-start">
+        <div class="header-tablet header-handy">
+          <a href="index.html"><img class="header-bild" src="./assets/img/logo.png"></a>
+        </div>
+        <div class="header-nav">
+          <div class="nav-container nav-container-tablet nav-container-uebergang-handy ">
+            <a class="header-a-allgemein" href="index.html">Start</a>
+            <a class="header-a-allgemein" href="rezept-fdes.tages.html">Rezept des Tages</a> <!--/*order-btn*/-->
+            <a class="header-a-allgemein" href="kontakt.html">Kontakt</a>
+            <a class="header-a-allgemein" href="impressum.html">Impressum</a>
+            <a class="header-a-allgemein" href="datenschutz.html">Datenschutz</a>
+          </div>
+          <div id="Menu-aufklappbar">
+            <div class="hamburg hamburger-menu" onclick="openMenu()">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="menu-handy">
+        <div class="menu d-none" id="menu">
+          <a href="index.html" class="header-a-allgemein-hamburg links">Start</a>
+          <a href="rezept-des-tages.html" class="header-a-allgemein-hamburg  links">Rezept des Tages</a>
+          <a href="kontakt.html" class="header-a-allgemein-hamburg  links">Kontakt</a>
+          <a href="impressum.html" class="header-a-allgemein-hamburg  links">Impressum</a>
+          <a href="datenschutz.html" class="header-a-allgemein-hamburg  links">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </header>
+		<main>
+			<section class="overview">
+				<h3>Französische Croissants</h3>
+				<img src="./assets/img/croissant.jpg" alt="Bild von Französische Croissants" />
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>60 Min.</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/brain-solid.svg" alt="Gehirn" /><span>normal</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/calendar-alt-regular.svg" alt="Kalendar" /><span
+							>24.02.2025</span
+						>
+					</div>
+				</div>
+			</section>
+			<section class="recipe">
+				<div class="divider"></div>
+				<div class="calculator">
+					<span class="ingredients-for-text">Zutaten für</span>
+					<input min="1" max="99" type="number" value="11" />
+					<button class="portions">Portionen</button>
+				</div>
+				<div class="ingredients">
+					<div class="ingredient">
+						<span class="amount"><span class="value">500</span>g</span
+						><span class="type">Weizenmehl (Type 65 oder 550)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">50</span>g</span
+						><span class="type">Zucker</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">1</span></span
+						><span class="type">Ei (Gr. M)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">10</span>g</span
+						><span class="type">Hefe</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">20</span>g</span
+						><span class="type">Butter</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">10</span>g</span
+						><span class="type">Salz</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">210</span>ml</span
+						><span class="type">Wasser</span>
+					</div>
+					<div class="ingredient"><span class="type bold-text">Butterplatte:</span></div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">225</span>g</span
+						><span class="type">Butter</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">25</span>g</span
+						><span class="type">Mehl (Ihrer Wahl)</span>
+					</div>
+				</div>
+			</section>
+			<section class="preparation">
+				<h4>Zubereitung</h4>
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>Arbeitszeit ca. 60 Minuten</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span
+							>Gesamtzeit ca. 60 Minuten</span
+						>
+					</div>
+				</div>
+				<h5>Ablauf</h5>
+				<p>
+					Alle Zutaten für den Grundteig in die Küchenmaschine geben und für 3 Minuten im langsamen und für 8 Minuten im schnellen Gang miteinander verkneten.
+					Tipp: Das zugeführte Wasser sollte nicht mehr als 15° C haben. Der Teig sollte kalt geführt werden. 
+					Nun den Teig für mindestens 3 bis 5 Stunden abgedeckt kalt stellen – am besten aber über Nacht.<br><br>
+					Jetzt die Butterplatte vorbereiten. Dafür die Butter direkt aus dem Kühlschrank nehmen und mit dem Mehl vermengen. Eine Platte formen (ca. die Form und Größe einer Tafel Schokolade) und ebenfalls in den Kühlschrank geben.
+					Nach der Ruhezeit alles aus dem Kühlschrank nehmen und die Butterplatte auf ca. 15 x 25 cm ausrollen.<br><br> Den Teig auf die gleiche Breite, aber die doppelte Länge ausrollen. Jetzt die Butterplatte auf den ausgerollten Teig legen und die Butter in den Teig gut einschlagen.
+					Nun das Butter-Teig-Gemisch auf 60 x 20 cm ausrollen. Tipp: Sehr gleichmäßig und rechteckig ausrollen.
+					Dann ein Drittel des Teiges zur Mitte hin einschlagen und von oben das andere Drittel darüber
+					legen. Es entstehen drei Lagen Teig. Das nennt man Tourieren. Tipp: Ordentlich arbeiten :-)
+					Das Ganze nochmal wiederholen und den Teig für 30 Minuten zurück in den Kühlschrank stellen.
+					Nach den 30 Minuten das Ganze ein letztes Mal wiederholen und dann wieder in den Kühlschrank stellen.
+					Jetzt den Teig wieder ausrollen auf eine Bahn mit einer Höhe von ca. 18 cm. Dann die Teigbahn in 13 bis 15 cm breite Abschnitte am unteren Ende einteilen. Am oberen Ende dasselbe machen, aber auf die Mitte der unteren Einteilung versetzt. Jetzt alles mit dem Pizzaroller zu Dreiecken schneiden.
+					Formen: Ein Dreieck dazu nehmen und es aufrollen. Dabei die Spitze kräftig ziehen, sodass sich das Teigstück beim Rollen etwas verlängert. Halbmondförmig formen und wieder über Nacht in den Kühlschrank stellen.
+					Am nächsten Tag die Croissants aus dem Kühlschrank nehmen, mit Ei bestreichen und für 1 bis 3 Stunden bei Raumtemperatur (am besten jedoch 25 bis 28° C) gehen lassen. Den Ofen auf 200° C Ober-/Unterhitze vorheizen und dann für 20 bis 22 Minuten backen.
+				</p>
+			</section>
+			<section class="credits">
+				<h5>Rezept erstellt von</h5>
+				<div class="creator">
+					<img src="./assets/img/Frank/FM.jpg" alt="Platzhalter Profilbild" />
+					<span>Frank</span>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a class="big invert" href="/"
+				><img class="logo" src="./assets/img/logo.png" alt="Kochwelt Logo mit Text"
+			/></a>
+			<a class="small invert" href="/"
+				><img class="logo" src="./assets/img/logo_small.png" alt="Kochwelt Logo"
+			/></a>
+			<span class="footer-middle">Kochwelt - Gruppenprojekt (2025) Gruppe 1</span>
+			<div class="socials">
+				<div class="social-links">
+					<a href="https://www.facebook.com/"><img src="./assets/img/calvin/facebook.png" alt="Facebook Logo" /></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/calvin/instagram.png" alt="Instagram Logo" /></a>
+					<a href="https://x.com/"><img src="./assets/img/calvin/twitter.png" alt="Twitter Logo" /></a>
+				</div>
+				<a class="external-link" href="https://de.freepik.com/">Logos von https://de.freepik.com/</a>
+			</div>
+		</footer>
+	</body>
+</html>

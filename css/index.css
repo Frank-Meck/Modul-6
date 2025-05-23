@@ -1,0 +1,179 @@
+main a img {
+  transition: scale 125ms, filter 125ms;
+}
+
+main a img:hover {
+  filter: drop-shadow(3px 3px 2px black);
+  scale: 1.05;
+}
+
+/*Section Amer */
+.hero-bild{
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border-radius: 10px;
+    display: flex;
+    object-fit: cover;
+}
+.hero{
+     display: flex;
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+.hero-text{
+    margin-left: 50px;
+}
+.hero-text p{
+    font-size: 24px;
+    margin-top: 20px;
+}
+.hero-text button{
+    height: 50px;
+    margin-top: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+/*Section Frank */
+.rezept-text{
+    padding-bottom:40px;
+}
+.section-rezepte-top{
+    background-color: var(--gray);
+    text-align: center;
+    padding-block:50px;
+}
+
+
+.Section-rezepte{
+    display:flex;
+    Justify-content: space-between;
+}
+
+.Section-rezepte-boxen{
+display:flex;
+flex-direction:column;
+gap:5px;
+}
+
+.img-rezepte {
+    width: 275px;
+    aspect-ratio: 1/1;
+    border-radius:10px; ;
+    object-fit: cover;
+}
+
+.Section-rezept-text{
+    text-align:center;
+ text-decoration:none;
+
+ color:black;
+ font-weight: bold;     
+}
+.Section-rezept-text:hover{
+ color:gray;
+ text-decoration:underline;
+}
+/*Section Calvin */
+
+.pfanne-wok {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+.pfanne-wok h4 {
+  text-align: center;
+}
+
+.pfanne-wok > div {
+  width: 100%;
+
+  display: flex;
+  gap: 5vw;
+}
+
+.pfanne-wok img {
+  width: 275px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pfanne-wok p {
+  text-wrap: pretty;
+}
+
+.img-container {
+  text-align: center;
+  align-content: center;
+}
+
+ @media (width <=900px) { 
+   /* AMER */
+   .hero{
+   flex-direction: column;
+   align-items: center;
+   }
+   .hero-bild{
+    width: 100%;
+   }
+   .hero-text{
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
+   }
+   .hero-text button{
+    margin-top: 20px;
+   }
+   
+  
+
+/* FRANK */
+.Section-rezepte{
+display:flex;
+flex-direction:column;
+
+}
+
+.Section-rezepte-boxen{
+padding-bottom: 55px;
+}
+
+.img-rezepte {
+    width: 70%;
+    aspect-ratio: 2 / 1;
+    }
+
+/* CALVIN */
+.pfanne-wok div {
+  flex-direction: column-reverse;
+}
+
+.pfanne-wok img {
+  width: 70%;
+  aspect-ratio: 2 / 1;
+}
+
+.pfanne-wok p {
+  text-align: center;
+}
+
+
+}
+
+ @media (width <=550px) {
+    /* FRANK */
+    .img-rezepte {
+      aspect-ratio: 3 / 2;
+    }
+
+    .pfanne-wok img {
+      aspect-ratio: 3 / 2;
+    }
+ }

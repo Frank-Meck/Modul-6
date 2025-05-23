@@ -1,0 +1,516 @@
+ /* ++++++++++++++++    Fonts nihct in Style CSS +++++++++++++++++++++++++++++++  */
+
+
+
+ /* ++++++++++++++++    Fonts nihct in Style CSS +++++++++++++++++++++++++++++++  */
+
+ /*  >>>  in Style CSS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   
+
+ @font-face {
+  font-family: "Raleway";
+  src: url(../assets/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --green: rgb(0,128,0) ;
+  --gray:rgb(239,239,239);
+  --footer-general-gray:rgb(64,59,59);
+
+  --contact-gray: rgb(220,220,220);
+  --footer-contact-gray:rgb(35,35,35);
+
+  --header-gray:rgb(64,59,59);
+  --header-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+
+  --border-radius: 10px;
+}
+
+body {  
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 24px;
+  }
+
+  header,
+  section,
+  footer {
+    padding-inline: max(24px, calc(50% - 1440px / 2));
+  }
+
+  img.white {
+    filter: invert(100%);
+  }
+
+
+  header {
+    box-shadow: var(--header-shadow);
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-size: 96px;
+  }
+
+  h2 {
+    font-size: 80px;
+    /* (D:80px | T: 56 | H: ?? ) 
+  }
+
+* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  / 
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+  }
+
+
+
+  body {
+
+    font-family: "Raleway";
+    font-weight: normal;
+    font-size: 24px;
+    }
+
+  <<<<<<<<<< Untercshied zur Style */
+
+
+ /* ++++++++++++++++    Fonts nihct in Style CSS +++++++++++++++++++++++++++++++  
+
+
+   geändert in style. css   header -> margin-bottom von 200px auf 75 px;
+
+
+
+   */
+
+ h4 {
+   font-size: 60px;
+   /* (D:36px | T: 36 | H: 36 ) */
+ }
+
+ /* ++++++++++++++++++++++    Fonts nicht in Style CSS +++++++++++++++++++++++++++++++  
+++ 
+++ 
+++   .nav-container; a und a:hover  
+++
+++    sind  für den allgemeinen Header-Bereich und sollten dann noch in die style.css
+++ 
+++
+************************************ FÜR STYLE CSS *************************************************/
+
+ .nav-container {
+   display: flex;
+   gap: 24px;
+   align-items: flex-end;
+   padding-bottom: 10px;
+
+ }
+
+ .header-a-allgemein {
+   text-decoration: none;
+   color: var(--header-gray);
+   /*rgb(64, 59, 59);*/
+   transition: all 125ms;
+ }
+
+ .header-a-allgemein:hover {
+   color: var(--green);
+   /*rgb(0, 128, 0);*/
+   text-decoration: underline solid 3px;
+   font-weight: bold;
+   text-underline-offset: 8px;
+ }
+
+ /******************************** STYLE CSS   ENDE ****************************************************/
+
+ .img-container {
+   height: 30dvh;
+   width: 100%;
+   border-radius: var(--border-radius);
+   object-fit: cover;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+ .info {
+   display: flex;
+   gap: 24px;
+   padding-top: 20px;
+   margin-bottom: 30px;
+ }
+
+ .info-label {
+   background-color: var(--gray);
+   /*var(--gray:rgb(239,239,239); */
+   border-radius: var(--border-radius);
+   display: flex;
+   align-items: center;
+   padding: 5px;
+   gap: 10px;
+ }
+
+ .icons {
+   height: 24px;
+   width: 24px;
+   margin-left: 10px;
+ }
+
+ .p-icon {
+   margin-right: 10px;
+ }
+
+ input {
+   border-radius: 5px 0 0 5px;
+   border-width: 1px;
+   height: 35px;
+   font-size: 20px;
+   text-align: center;
+
+ }
+
+ button {
+   height: 25px;
+   background-color: var(--green);
+   color: white;
+   width: 90px;
+   height: 35px;
+   border-width: 0;
+   transition: all 223ms;
+ }
+
+ button:hover {
+   background-color: rgb(15, 37, 15);
+
+
+
+ }
+
+
+
+
+ .number-of-units {
+   padding-left: 0;
+   display: flex;
+   align-items: center;
+ }
+
+ .zutaten {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 35px;
+   padding-top: 50px;
+ }
+
+ .label-zutaten {
+   margin-right: 10px;
+ }
+
+ .divide-area {
+   border: 1px solid var(--gray);
+   margin-bottom: 15px;
+ }
+
+ table {
+   border-collapse: collapse;
+ }
+
+ .columnOne {
+   background-color: var(--gray);
+   width: 100pc;
+   height: 40px;
+ }
+
+ .columnTwo {
+   height: 40px;
+ }
+
+ .td-0 {
+   display: none;
+ }
+
+ .td-1 {
+   border-radius: 10px 0 0 10px;
+   width: 7%;
+   text-align: center;
+ }
+
+ .td-2 {
+   width: 7%;
+   text-align: center;
+ }
+
+ .td-3 {
+   padding-left 20px;
+   border-radius: 0 10px 10px 0;
+ }
+
+ .zubereitung {
+   display: flex;
+   align-items: center;
+   padding-top: 50px;
+   padding-left: 0;
+   padding-top: 20px;
+   gap: 20px;
+   margin-bottom: 35px;
+ }
+
+ .erstellt-von {
+   display: flex;
+   margin-bottom: 75px;
+ }
+
+ .table-zutaten {
+   padding-top: 20px;
+   padding-left: 0;
+   padding-right: 0;
+ }
+
+ p {
+   padding-top: 20px;
+   margin-bottom: 35px;
+ }
+
+ .profile-Img {
+   height: 100px;
+   width: 100px;
+   object-fit: cover;
+   border-radius: 100%;
+ }
+
+ .autor {
+   width: 300px;
+   margin-bottom: 30px;
+ }
+
+ .autor-name {
+   font-size: normal;
+   display: flex;
+   align-items: center;
+   margin-left: 20px;
+ }
+
+ footer {
+   /*--header-gray:rgb(64,59,59);*/
+   height: 100px;
+   background-color: var(--header-gray);
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .footer-a-datenschutz {
+   color: White;
+   font-size: 16px;
+   text-align: center;
+   text-decoration: none;
+ }
+
+ .footer-a-datenschutz:hover {
+   color: var(--green);
+   /*rgb(0, 128, 0);*/
+   text-decoration: underline solid 3px;
+   font-weight: bold;
+   text-underline-offset: 0px;
+ }
+
+
+ .footer-div {
+   display: flex;
+   padding-top: 20px;
+   justify-content: space-between;
+   padding-left: 0;
+ }
+
+ .footer-img {
+   filter: invert(100%);
+   /* margin-left: 20px; */
+   height: 50px;
+   width: 140px;
+   display: flex;
+   justify-content: space-between:
+ }
+
+ .footer-img-show-none {
+   display: none;
+ }
+
+ .footer-follow-us {
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+      padding-right: 0px;
+      justify-content:center;
+
+ }
+
+ h6 {
+   font-size: 12px;
+   color: lightgray;
+   text-align: center;
+ }
+
+ .footer-datenschutzt-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   padding-left: 0;
+    padding-right: 0;
+
+ }
+
+ .footer-Datenschutz {
+   margin-left: 50px;
+   margin-right: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .follow-us-icon {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   
+
+ }
+
+
+ .footer-follow-us-img {
+   height: 30px;
+   width: 95px;
+   object-fit: cover;
+
+ }
+
+ /* +++++++++++++++++++++++++++++++++++++++++++   T A B L E T ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ @media (width <=1160px) {
+   .nav-container-tablet {
+     font-size: 20px;
+     /* visibility: hidden; */
+   }
+
+   .h4-tablet {
+     font-size: 36px;
+
+   }
+
+   .header-tablet {
+     height: 90px;
+   }
+
+   .table-tablet {
+     font-size: 20px;
+   }
+
+ }
+
+
+ /* +++++++++++++++++++++++++++++++++++++++++++   Ü B E R G A N G   T A B L E T - H A N D Y +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ @media (width <=1000px) {
+   .nav-container-uebergang-handy {
+     display: none;
+     /*visibility: hidden;
+  */
+   }
+
+   @media (width <=870px) {
+     .info-label-uebergang-unten-handy {
+       /*    width: 200px; */
+       font-size: 16px;
+       text-align: center;
+     }
+
+     .zubereitung-unten-handy {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+
+   }
+
+   @media(max-width:840px) {
+     .footer-logo-img_840 {
+       height: 25px;
+       width: 25px;
+       object-position: left;
+       object-fit: cover;
+       aspect-ratio: 1/ 2;
+     }
+     .h6-footer{
+      font-size: 10px;
+     }
+     .a-footer-uebergang-handy {
+      font-size: 14px;
+     }
+
+     .footer-logo-kochwelt_840 {
+       height: 45px;
+       width: 37px;
+       object-position: left;
+       object-fit: cover;
+       aspect-ratio: 1/ 1;
+     }
+
+   }
+
+   /* +++++++++++++++++++++++++++++++++++++++++++   H A N D Y ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+   @media (width <=650px) {
+     .header-handy {
+       height: 40px;
+     }
+
+
+     .info-handy {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+
+     .h4-handy {
+       font-size: 24px;
+     }
+
+     .table-handy {
+       font-size: 16px;
+     }
+
+     .info-label-oben-handy {
+       width: 200px;
+       text-align: center;
+       display: inline-flex;
+       justify-content: start;
+     }
+   }
+
+   .info-label-unten-handy {
+     text-align: center;
+   }
+
+   .zubereitung-handy {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+.autor-handy {
+   width: 260px;
+     display: flex;
+ 
+ }
+   .label-zutaten-handy {
+     text-align: center;
+   }
+
+   .zubereitung-center-handy {
+     text-align: center;
+   }

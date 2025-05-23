@@ -1,0 +1,161 @@
+
+header {
+  width: 100%;
+}
+
+
+.header-underline{
+     box-shadow: var(--header-shadow);
+     margin-bottom:5px; 
+}
+ .sticky-header {
+     position: sticky;
+     top: 0;
+     background-color: white;
+ }
+  .header-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+ .nav-container {
+     display: flex;
+     gap: 24px;
+     align-items: flex-end;
+     padding-bottom: 10px;
+
+ }
+
+ .header-a-allgemein {
+     text-decoration: none;
+     color: var(--header-gray);
+     /*rgb(64, 59, 59);*/
+     transition: all 125ms;
+ }
+
+ .header-a-allgemein:hover {
+     color: var(--green);
+     /*rgb(0, 128, 0);*/
+     text-decoration: underline solid 3px;
+     font-weight: bold;
+     text-underline-offset: 8px;
+ }
+
+.header-a-allgemein-hamburg {
+     text-decoration: none;
+     color: var(--header-gray);
+     /*rgb(64, 59, 59);*/
+     transition: all 125ms;
+ }
+
+ .header-a-allgemein-hamburg:hover {
+     color: var(--green);
+     /*rgb(0, 128, 0);*/
+     text-decoration: underline solid 1px;
+     font-weight: bold;
+     text-underline-offset: 2px;
+ }
+
+.menu-handy{
+  display:flex;
+  justify-content: end; 
+}
+
+ #Menu-aufklappbar {
+    display: flex;
+    margin-left: 15px;
+   align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .hamburger-menu {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+    justify-content: end;
+  }
+
+  .hamburger-line {
+    background-color: black;
+    height: 4px;
+    width: 30px;
+    margin-top: 4px;
+  }
+.hamburg{
+width:1px;
+}
+
+
+  
+  .hamburger-menu:hover {
+    background-color: rgb(131, 136, 131);
+
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    width: 200px;
+    margin-left: 40px;
+    margin-right:10px;
+  }
+
+
+  .d-none {
+    display: none;
+  }
+
+
+ @media (width <=1190px) {
+     .nav-container-tablet {
+         font-size: 20px;
+         /* visibility: hidden; */
+     }
+ }
+ 
+
+
+ @media (width <=1090px) {
+     .nav-container-uebergang-handy {
+         display: none;
+         /*visibility: hidden;
+  */
+     }
+   .hamburger-menu {
+    display: initial; 
+    width: 30px;
+    cursor: pointer;
+    justify-content: end;
+  }
+ }
+
+ @media (width <=550px) {
+
+header img{
+height: 70px;
+}
+
+  }
+   @media (width <=350px) {
+
+header img{
+height: 60px;
+}
+
+  }

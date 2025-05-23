@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../assets/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --green: rgb(0,128,0) ;
+  --gray:rgb(239,239,239);
+  --footer-general-gray:rgb(64,59,59);
+
+  --contact-gray: rgb(220,220,220);
+  --footer-contact-gray:rgb(35,35,35);
+
+  --header-gray:rgb(64,59,59);
+  --header-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+
+  --border-radius: 10px;
+}
+
+body {  
+  /* background-color: var(--gray); */
+  /* background-color: black; */
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 24px;         /* (D:24px | T: 20px | H: 16px ) */
+}
+
+header, section, footer {
+  padding-inline: max(24px, calc(50% - 1440px / 2));
+}
+
+
+h1 {   
+  font-size: 96px; /* (D:96px | T: 72px | H: 44px ) */
+}
+
+h2 {   
+  font-size: 80px; /* (D:80px | T: 64px | H: 40px ) */
+}
+
+h3 {
+	font-size: 56px;
+}
+
+h4 {
+	font-size: 45px;
+}
+
+h5 {
+	font-size: 28px;
+}
+
+button {
+	color: white;
+	font-family: unset;
+	font-size: unset;
+	height: 100%;
+
+	text-align: center;
+	align-content: center;
+	flex-grow: 1;
+
+	padding-inline: 0.5rem;
+
+	border: 2px solid var(--green);
+
+	background-color: var(--green);
+}
+
+footer a {
+  transition: scale 125ms, filter 125ms, drop-shadow 125ms;
+	cursor: pointer;
+}
+
+button {
+	transition: scale 125ms, filter 125ms, drop-shadow 125ms;
+	cursor: pointer;
+}
+
+footer a:hover {
+	scale: 1.05;
+	filter: brightness(1.15) drop-shadow(1px 2px 2px white);
+}
+
+button:hover {
+	scale: 1.05;
+	filter: brightness(1.15) drop-shadow(1px 2px 2px black);
+}
+
+@media (width <= 768px) {
+  body {
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 72px;
+  }
+  
+  h2{
+    font-size: 64px;
+  }
+
+  h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+h5 {
+	font-size: 26px;
+}
+}
+
+@media (width <= 375px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 44px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/* Bis hier Style.css Allgemein für alle Seiten */
+/*
+
+/* header {
+ height: 250px;
+  border: 2px solid red; 
+ box-shadow: var(--header-shadow);
+ margin-bottom: 200px;
+ display: flex;
+ justify-content: space-between;
+ border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+} */

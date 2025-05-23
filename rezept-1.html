@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/img/logo_small.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/rezept.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+	  <link rel="stylesheet" href="./css/header.css">
+		
+		<script type="module" src="./js/calc_portions.js"></script>
+
+  		<script src="./js/header.js"></script>
+
+		<title>Spicy Thai Noodles</title>
+	</head>
+	<body>
+  <header class="sticky-header header-underline">
+    <div>
+      <nav class="header-start">
+        <div class="header-tablet header-handy">
+          <a href="index.html"><img class="header-bild" src="./assets/img/logo.png"></a>
+        </div>
+        <div class="header-nav">
+          <div class="nav-container nav-container-tablet nav-container-uebergang-handy ">
+            <a class="header-a-allgemein" href="index.html">Start</a>
+            <a class="header-a-allgemein" href="rezept-des-tages.html">Rezept des Tages</a> <!--/*order-btn*/-->
+            <a class="header-a-allgemein" href="kontakt.html">Kontakt</a>
+            <a class="header-a-allgemein" href="impressum.html">Impressum</a>
+            <a class="header-a-allgemein" href="datenschutz.html">Datenschutz</a>
+          </div>
+          <div id="Menu-aufklappbar">
+            <div class="hamburg hamburger-menu" onclick="openMenu()">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="menu-handy">
+        <div class="menu d-none" id="menu">
+          <a href="index.html" class="header-a-allgemein-hamburg links">Start</a>
+          <a href="rezept-des-tages.html" class="header-a-allgemein-hamburg  links">Rezept des Tages</a>
+          <a href="kontakt.html" class="header-a-allgemein-hamburg  links">Kontakt</a>
+          <a href="impressum.html" class="header-a-allgemein-hamburg  links">Impressum</a>
+          <a href="datenschutz.html" class="header-a-allgemein-hamburg  links">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </header>
+		<main>
+			<section class="overview">
+				<h3>Spicy Thai Noodles</h3>
+				<img src="./assets/img/amer/spicy-thai-noodles.webp" alt="Bild von Spicy Thai Noodles" />
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>15 Min.</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/brain-solid.svg" alt="Gehirn" /><span>simpel</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/calendar-alt-regular.svg" alt="Kalendar" /><span
+							>24.02.2025</span
+						>
+					</div>
+				</div>
+			</section>
+			<section class="recipe">
+				<div class="divider"></div>
+				<div class="calculator">
+					<span class="ingredients-for-text">Zutaten für</span>
+					<input min="1" max="99" type="number" value="2" />
+					<button class="portions">Portionen</button>
+				</div>
+				<div class="ingredients">
+					<div class="ingredient">
+						<span class="amount"><span class="value">500</span>g</span
+						><span class="type">Gemüse nach Wahl (Zucchini, Möhren, Frühlingszwiebel, Aubergine oder was der Kühlschrank noch hergibt)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">250</span>g</span
+						><span class="type">Tofu, z. B. Mandel-Nuss-Tofu oder Huhn</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">500</span>g</span
+						><span class="type">Tomate(n)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">2</span></span
+						><span class="type">Zwiebel(n)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">1</span>Glas</span
+						><span class="type">Oliven, schwarze, cs100g</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">1250</span>g</span
+						><span class="type">Konjaknudeln (Tagliatelle) oder andere Pasta</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">1</span>Spritzer</span
+						><span class="type">Limettensaft oder Zitronensaft</span>
+					</div>
+					<div class="ingredient"><span class="type">Koriander, frisch, gehackt oder Frühlingszwiebeln</span></div>
+					<div class="ingredient"><span class="type">Salz und Pfeffer</span></div>
+					<div class="ingredient"><span class="type">Pfeffer</span></div>
+					<div class="ingredient"><span class="type">Oregano</span></div>
+				</div>
+			</section>
+			<section class="preparation">
+				<h4>Zubereitung</h4>
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>Arbeitszeit ca. 30 Minuten</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span
+							>Gesamtzeit ca. 45 Minuten</span
+						>
+					</div>
+				</div>
+				<h5>Ablauf</h5>
+				<p>
+					Zitronengras waschen, trocken tupfen und erst quer, 
+					dann längs halbieren. Stücke mit Küchengarn zusammenbinden. Ingwer und 
+					Zwiebeln schälen. Ingwer fein würfeln oder hacken. Zwiebeln in feine 
+					Spalten schneiden. Chili putzen, der Länge nach aufschneiden, waschen und 
+					Kerne entfernen. Schote fein hacken.    
+					Zuckerschoten waschen, abtropfen lassen, putzen und diagonal halbieren. Pak-Choi waschen, putzen, abtropfen lassen und in Spalten schneiden. Pilze säubern, putzen und in dünne Scheiben schneiden.
+				</p>
+			</section>
+			<section class="credits">
+				<h5>Rezept erstellt von</h5>
+				<div class="creator">
+					<img src="./assets/img/profile.png" alt="Platzhalter Profilbild" />
+					<span>Amer</span>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a class="big invert" href="/"
+				><img class="logo" src="./assets/img/logo.png" alt="Kochwelt Logo mit Text"
+			/></a>
+			<a class="small invert" href="/"
+				><img class="logo" src="./assets/img/logo_small.png" alt="Kochwelt Logo"
+			/></a>
+			<div class="footer-middle"><span>Rechtliches:</span>
+			<a class="external-link" href="https://img.chefkoch-cdn.de/rezepte/3570031535729583/bilder/1307460/crop-642x428/spicy-thai-noodles.jpg">
+				Bild der Spicy Thai Noodles von	chefkoch.de</a>
+			</div>
+			<div class="socials">
+				<div class="social-links">
+					<a href="https://www.facebook.com/"><img src="./assets/img/calvin/facebook.png" alt="Facebook Logo" /></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/calvin/instagram.png" alt="Instagram Logo" /></a>
+					<a href="https://x.com/"><img src="./assets/img/calvin/twitter.png" alt="Twitter Logo" /></a>
+				</div>
+				<a class="external-link" href="https://de.freepik.com/">Logos von https://de.freepik.com/</a>
+			</div>
+		</footer>
+	</body>
+</html>

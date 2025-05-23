@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/img/logo_small.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/rezept.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/header.css">
+		
+		<script type="module" src="./js/calc_portions.js"></script>
+
+  		<script src="./js/header.js"></script>
+		<title>Florentiner Kartoffeln</title>
+	</head>
+	<body>
+  <header class="sticky-header header-underline">
+    <div>
+      <nav class="header-start">
+        <div class="header-tablet header-handy">
+          <a href="index.html"><img class="header-bild" src="./assets/img/logo.png"></a>
+        </div>
+        <div class="header-nav">
+          <div class="nav-container nav-container-tablet nav-container-uebergang-handy ">
+            <a class="header-a-allgemein" href="index.html">Start</a>
+            <a class="header-a-allgemein" href="rezept-des-tages.html">Rezept des Tages</a> <!--/*order-btn*/-->
+            <a class="header-a-allgemein" href="kontakt.html">Kontakt</a>
+            <a class="header-a-allgemein" href="impressum.html">Impressum</a>
+            <a class="header-a-allgemein" href="datenschutz.html">Datenschutz</a>
+          </div>
+          <div id="Menu-aufklappbar">
+            <div class="hamburg hamburger-menu" onclick="openMenu()">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="menu-handy">
+        <div class="menu d-none" id="menu">
+          <a href="index.html" class="header-a-allgemein-hamburg links">Start</a>
+          <a href="rezept-des-tages.html" class="header-a-allgemein-hamburg  links">Rezept des Tages</a>
+          <a href="kontakt.html" class="header-a-allgemein-hamburg  links">Kontakt</a>
+          <a href="impressum.html" class="header-a-allgemein-hamburg  links">Impressum</a>
+          <a href="datenschutz.html" class="header-a-allgemein-hamburg  links">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </header>
+		<main>
+			<section class="overview">
+				<h3>Florentiner Kartoffeln</h3>
+				<img src="./assets/img/calvin/florentiner.jpg" alt="Bild von Florentiner Karoffeln" />
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>50 Min.</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/brain-solid.svg" alt="Gehirn" /><span>simpel</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/calendar-alt-regular.svg" alt="Kalendar" /><span
+							>19.05.2025</span
+						>
+					</div>
+				</div>
+			</section>
+			<section class="recipe">
+				<div class="divider"></div>
+				<div class="calculator">
+					<span class="ingredients-for-text">Zutaten für</span>
+					<input min="1" max="99" type="number" value="2" />
+					<button class="portions">Portionen</button>
+				</div>
+				<div class="ingredients">
+					<div class="ingredient">
+						<span class="amount"><span class="value">4</span></span
+						><span class="type">Kartoffel(n) (festkochend)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">150</span>g</span
+						><span class="type">frischer Spinat</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">100</span>g</span
+						><span class="type">Kirschtomate(n)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">3</span></span
+						><span class="type">Frühlingszwiebel(n)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">2</span>g</span
+						><span class="type">Petersilie-Stängel</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">100</span>g</span
+						><span class="type">Feta (Schafskäse)</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">100</span>g</span
+						><span class="type">Sahne</span>
+					</div>
+					<div class="ingredient">
+						<span class="amount"><span class="value">2</span>EL</span
+						><span class="type">Olivenöl</span>
+					</div>
+					<div class="ingredient"><span class="type">Parmesanspäne (je nach Geschmack)</span></div>
+					<div class="ingredient"><span class="type">Salz</span></div>
+					<div class="ingredient"><span class="type">Pfeffer aus der Mühle</span></div>
+				</div>
+			</section>
+			<section class="preparation">
+				<h4>Zubereitung</h4>
+				<div class="labels">
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span>Arbeitszeit ca. 30 Minuten</span>
+					</div>
+					<div class="label">
+						<img src="./assets/img/icons/clock-regular.svg" alt="Uhr" /><span
+							>Gesamtzeit ca. 50 Minuten</span
+						>
+					</div>
+				</div>
+				<h5>Vorbereitung</h5>
+				<p>Die Kartoffeln werden ca. 20min vorgegart.</p>
+				<h5>Ablauf</h5>
+				<p>
+					Zuerst werden vorgegarte Kartoffeln mit Schale längs in dickere Scheiben geschnitten. Dann
+					bereitet man das Gemüse und die Kräuter vor: Spinat wird verlesen, gewaschen und grob
+					geschnitten, Tomaten halbiert, Frühlingszwiebeln in feine Ringe, Petersilie gezupft sowie
+					Zwiebel und Knoblauch fein gewürfelt. Der Feta wird trocken getupft und in kleine Würfel
+					geschnitten. Anschließend brät man die Kartoffelscheiben in Öl goldbraun an und gibt gegen
+					Ende Zwiebel und Knoblauch mit in die Pfanne. Danach kommen Tomaten, Spinat, Feta und ein
+					Teil der Frühlingszwiebeln hinzu und alles wird kurz mitgebraten. Mit Anisée und Sahne
+					wird abgelöscht, leicht eingekocht, Parmesan eingerührt und mit Salz und Pfeffer
+					abgeschmeckt – zum Schluss wird das Gericht mit Petersilie und Frühlingszwiebeln garniert
+					serviert.
+				</p>
+			</section>
+			<section class="credits">
+				<h5>Rezept erstellt von</h5>
+				<div class="creator">
+					<img src="./assets//img/calvin/calvin-silhouette.png" alt="Silhouette von Calvin" />
+					<span>Calvin</span>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a class="big invert" href="/"
+				><img class="logo" src="./assets/img/logo.png" alt="Kochwelt Logo mit Text"
+			/></a>
+			<a class="small invert" href="/"
+				><img class="logo" src="./assets/img/logo_small.png" alt="Kochwelt Logo"
+			/></a>
+			<div class="footer-middle"><span>Rechtliches:</span>
+			<a class="external-link" href="https://michaelsmedia.de/blog-1/beilagensalate/kartoffel-florentiner">
+				Bild der Florentiner Kartoffeln von michaelsmedia.de</a>
+				</div>
+			<div class="socials">
+				<div class="social-links">
+					<a href="https://www.facebook.com/"><img src="./assets/img/calvin/facebook.png" alt="Facebook Logo" /></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/calvin/instagram.png" alt="Instagram Logo" /></a>
+					<a href="https://x.com/"><img src="./assets/img/calvin/twitter.png" alt="Twitter Logo" /></a>
+				</div>
+				<a class="external-link" href="https://de.freepik.com/">Logos von https://de.freepik.com/</a>
+			</div>
+		</footer>
+	</body>
+</html>
